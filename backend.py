@@ -1,4 +1,4 @@
-class Instagram():
+class UserManager():
 
     def __init__(self):
         self.users = {}
@@ -32,14 +32,16 @@ class Instagram():
     def delete_account(self, name):
 
         del self.users[name]
-
+class InstagramApp(): #core centre of all objects
+    def __init__(self):
+        self.users=UserManager()
 
 if __name__ == "__main__":
 
-    app = Instagram()
+    app = InstagramApp()
 
     def account_existance(name, password):
-        valid = app.login(name, password)
+        valid = app.users.login(name, password)
         return valid
 
     while True:
@@ -55,7 +57,7 @@ if __name__ == "__main__":
             password = input("Enter your password: ")
             email = input("Enter your email: ")
 
-            check = app.create_user(name, password, email)
+            check = app.users.create_user(name, password, email)
 
             if check:
                 print("Successfully account created!")
@@ -88,7 +90,7 @@ if __name__ == "__main__":
             check = account_existance(name, password)
 
             if check:
-                app.delete_account(name)
+                app.users.delete_account(name)
                 print("Account deleted")
             else:
                 print("Wrong username or password!")

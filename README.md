@@ -11,7 +11,8 @@ This project currently runs as a command-line application and stores data in mem
 - Account deletion
 - Auto-generated unique user IDs
 - In-memory user management using Python dictionaries
-- Menu-driven command-line interface
+- Menu-driven command-line interface 
+
 
 ## Technologies
 
@@ -23,11 +24,17 @@ This project currently runs as a command-line application and stores data in mem
 ## Current Project Structure
 
 ```
-Instagram
-├── User Registration
-├── User Login
-├── Delete Account
-└── In-Memory User Storage
+InstagramApp
+│
+├── UserManager
+│   ├── User Registration
+│   ├── User Login
+│   ├── Delete Account
+│   └── In-Memory User Storage
+│
+├── PostManager (Planned)
+│
+└── FollowManager (Planned)
 ```
 
 ## Planned Features
@@ -36,7 +43,7 @@ Instagram
 - View posts
 - Like posts
 - Comment system
-- Follow / Unfollow users
+- Follow /  Unfollow users
 - User profiles
 - Search users
 - SQLite database integration
