@@ -12,11 +12,17 @@ This project currently runs as a command-line application and stores data in mem
 - User logout
 - Account deletion
 - Auto-generated unique user IDs
+<<<<<<< HEAD
 - Create posts
 - Auto-generated unique post IDs
 - Track the number of posts created by each user
 - In-memory user and post management using Python dictionaries
 - Menu-driven command-line interface
+=======
+- In-memory user management using Python dictionaries
+- Menu-driven command-line interface 
+
+>>>>>>> 20b17948c6387c8d94c5cd41313c23d63df2efb3
 
 ## Technologies
 
@@ -29,6 +35,7 @@ This project currently runs as a command-line application and stores data in mem
 ## Current Project Structure
 
 ```
+<<<<<<< HEAD
 Instagram
 backend.py
 │
@@ -60,6 +67,20 @@ backend.py
       ├── Create Post
       ├── Logout
       └── Exit
+=======
+InstagramApp
+│
+├── UserManager
+│   ├── User Registration
+│   ├── User Login
+│   ├── Delete Account
+│   └── In-Memory User Storage
+│
+├── PostManager (Planned)
+│
+└── FollowManager (Planned)
+```
+>>>>>>> 20b17948c6387c8d94c5cd41313c23d63df2efb3
 
 ## Planned Features
 
@@ -67,7 +88,7 @@ backend.py
 - Delete posts
 - Like posts
 - Comment system
-- Follow / Unfollow users
+- Follow /  Unfollow users
 - User profiles
 - Search users
 - SQLite database integration
